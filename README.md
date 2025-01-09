@@ -1,7 +1,7 @@
-Description du Projet
+Description du Projet :
 Ce portfolio en ligne présente mes créations, compétences et projets récents dans le domaine du design et du multimédia.
 
-Sections Principales
+Sections Principales :
 Accueil : Présentation rapide.
 CV : Mon parcours et mes compétences.
 Portfolio : Galerie de projets interactifs.
