@@ -7,10 +7,10 @@
     <meta name="description" content="Découvrez les compétences professionnelles et techniques de Bika en design et développement web ainsi que le ui/ux design.">
     <meta name="author" content="Mohamed Amine Benkhalifa">
     <meta name="keywords" content="Compétences, Bika, Développeur, Design, Web, Expériences">
-    <link rel="icon" href="path/to/your/icon.png" type="image/png">
+    <link rel="icon" href="icon192.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="canonical" href="https://el-bika.github.io/Archi-TP/Competences.html">
+    <link rel="canonical" href="https://el-bika.github.io/Archi-TP/competences.html">
 
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="Gestion De Compétences - Bika">
@@ -24,6 +24,9 @@
     <meta name="twitter:title" content="Gestion De Compétences - Bika">
     <meta name="twitter:description" content="Découvrez les compétences professionnelles et techniques de Bika en design et développement web ainsi que le ui/ux design.">
     <meta name="twitter:image" content="Competences_Thumbnail.jpg">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <header>
@@ -40,55 +43,66 @@
             </ul>
         </nav>
     </header>
+    
+    <main>
+        <section id="competences" class="competences-section">
+            <div class="section-title">
+                <h1>Gestion De Compétences</h1>
+                <h2>Mes Compétences</h2>
+                <p>Découvrez mes compétences professionnelles et techniques.</p>
+            </div>
             
-    <section id="competences" class="competences-section">
-        <div class="section-title">
-            <h1>Gestion De Compétences</h1>
-            <h2>Mes Compétences</h2>
-            <p>Découvrez mes compétences professionnelles et techniques.</p>
-        </div>
-        
-        <div id="competences-list" class="competence-container"></div>
-        
-        <!-- Form to adjust skills -->
-        <div class="competence-form">
-            <h3>Ajuster mes compétences</h3>
-            <form id="competenceForm">
-                <label for="selectedSkill">Sélectionnez une compétence :</label>
-                <select id="selectedSkill"></select>
-                
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" placeholder="Nom de la compétence">
-                
-                <label for="niveau">Niveau :</label>
-                <select id="niveau" name="niveau" onchange="updateLevelLabel()">
-                    <option value="Débutant">Débutant</option>
-                    <option value="Intermédiaire">Intermédiaire</option>
-                    <option value="Avancé">Avancé</option>
-                    <option value="Professionnel">Professionnel</option>
-                </select>
-                
-                <label for="description">Description :</label>
-                <textarea id="description" name="description" placeholder="Description de la compétence"></textarea>
-                
-                <button type="button" id="addSkill">Ajouter</button>
-                <button type="button" id="modifySkill">Modifier</button>
-                <button type="button" id="deleteSkill">Supprimer</button>
-            </form>
-        </div>
-    </section>
+            <div id="competences-list" class="competence-container"></div>
+            
+            <!-- Form to adjust skills -->
+            <div class="competence-form">
+                <h3>Ajuster mes compétences</h3>
+                <form id="competenceForm">
+                    <label for="selectedSkill">Sélectionnez une compétence :</label>
+                    <select id="selectedSkill"></select>
+                    
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom de la compétence">
+                    
+                    <label for="niveau">Niveau :</label>
+                    <select id="niveau" name="niveau" onchange="updateLevelLabel()">
+                        <option value="Débutant">Débutant</option>
+                        <option value="Intermédiaire">Intermédiaire</option>
+                        <option value="Avancé">Avancé</option>
+                        <option value="Professionnel">Professionnel</option>
+                    </select>
+                    
+                    <label for="description">Description :</label>
+                    <textarea id="description" name="description" placeholder="Description de la compétence"></textarea>
+                    
+                    <button type="button" id="addSkill">Ajouter</button>
+                    <button type="button" id="modifySkill">Modifier</button>
+                    <button type="button" id="deleteSkill">Supprimer</button>
+                </form>
+            </div>
+        </section>
+    </main>
     
     <footer>
         <p>&copy; 2024 Bika. Tous droits réservés.</p>
         <div class="Suivez-moi">
-            <a href="https://github.com/El-bika/" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/mohamed-amine-benkhalifa" target="_blank">LinkedIn</a>
+            <a href="https://github.com/El-bika/" target="_blank" rel="nofollow">GitHub</a>
+            <a href="https://www.linkedin.com/in/mohamed-amine-benkhalifa" target="_blank" rel="nofollow">LinkedIn</a>
         </div>
         <div class="sitemap">
-            <a href="sitemap.xml">Sitemap</a>
+            <a href="sitemap.xml" rel="nofollow">Sitemap</a>
         </div>
     </footer>
 
     <script src="cv.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCM280LP2Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VCM280LP2Z');
+    </script>
 </body>
 </html>

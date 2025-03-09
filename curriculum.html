@@ -7,16 +7,16 @@
     <meta name="description" content="Découvrez le parcours, les compétences et les expériences de Bika, développeur web et designer passionné.">
     <meta name="author" content="Mohamed Amine Benkhalifa">
     <meta name="keywords" content="CV, Bika, Développeur, Design, Web, Expériences, Compétences">
-    <link rel="icon" href="icone.png" type="image/png">
+    <link rel="icon" href="icon192.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="canonical" href="https://el-bika.github.io/Archi-TP/Curriculum.html">
+    <link rel="canonical" href="https://el-bika.github.io/archi-tp/curriculum.html">
 
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="CV de Bika - Développeur Web et Designer">
     <meta property="og:description" content="Découvrez le parcours, les compétences et les expériences de Bika, développeur web et designer passionné.">
     <meta property="og:image" content="Cv_Thumbnail.jpg">
-    <meta property="og:url" content="https://el-bika.github.io/Archi-TP/curriculum.html">
+    <meta property="og:url" content="https://el-bika.github.io/archi-tp/curriculum.html">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Metadata -->
@@ -24,6 +24,9 @@
     <meta name="twitter:title" content="CV de Bika - Développeur Web et Designer">
     <meta name="twitter:description" content="Découvrez le parcours, les compétences et les expériences de Bika, développeur web et designer passionné.">
     <meta name="twitter:image" content="Cv_Thumbnail.jpg">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <header>
@@ -40,31 +43,42 @@
             </ul>
         </nav>
     </header>
-            
-    <section id="cv" class="cv-section">
-        <div class="cv-header">
-            <h1>Mon CV</h1>
-            <p>Découvrez mon parcours et mes compétences.</p>
-        </div>
-
-        <div class="cv-content">
-            <div class="cv-thumbnail-container">
-                <img src="thumbnail.jpg" alt="CV Thumbnail" class="cv-thumbnail">
-                <a href="cv.pdf" class="cv-btn" target="_blank">Voir mon CV en PDF</a>
+    
+    <main>
+        <section id="cv" class="cv-section">
+            <div class="cv-header">
+                <h1>Mon CV</h1>
+                <p>Découvrez mon parcours et mes compétences.</p>
             </div>
-        </div>
-    </section>
+
+            <div class="cv-content">
+                <div class="cv-thumbnail-container">
+                    <img src="thumbnail.jpg" alt="CV Thumbnail" class="cv-thumbnail">
+                    <a href="cv.pdf" class="cv-btn" target="_blank">Voir mon CV en PDF</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Bika. Tous droits réservés.</p>
         <div class="Suivez-moi">
-            <a href="https://github.com/El-bika/" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/mohamed-amine-benkhalifa" target="_blank">LinkedIn</a>
+            <a href="https://github.com/El-bika/" target="_blank" rel="nofollow">GitHub</a>
+            <a href="https://www.linkedin.com/in/mohamed-amine-benkhalifa" target="_blank" rel="nofollow">LinkedIn</a>
         </div>
         <div class="sitemap">
-            <a href="sitemap.xml">Sitemap</a>
+            <a href="sitemap.xml" rel="nofollow">Sitemap</a>
         </div>
     </footer>
     <script src="cv.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCM280LP2Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VCM280LP2Z');
+    </script>
 </body>
 </html>

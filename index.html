@@ -7,16 +7,16 @@
     <meta name="description" content="Bienvenue sur le portfolio de Bika. Découvrez mes compétences, projets et expériences en design et développement web.">
     <meta name="author" content="Mohamed Amine Benkhalifa">
     <meta name="keywords" content="Portfolio, Bika, Développeur, Compétences, Projets, Expériences">
-    <link rel="icon" href="icone.png" type="image/png">
+    <link rel="icon" href="icon192.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="canonical" href="https://el-bika.github.io/Archi-TP/index.html">
+    <link rel="canonical" href="https://el-bika.github.io/archi-tp/index.html">
 
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="Portfolio de Bika">
     <meta property="og:description" content="Bienvenue sur le portfolio de Bika. Découvrez mes compétences, projets et expériences en design et développement web.">
     <meta property="og:image" content="Accueil_Thumbnail.jpg">
-    <meta property="og:url" content="https://el-bika.github.io/Archi-TP/index.html">
+    <meta property="og:url" content="https://el-bika.github.io/archi-tp/index.html">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Metadata -->
@@ -24,6 +24,9 @@
     <meta name="twitter:title" content="Portfolio de Bika">
     <meta name="twitter:description" content="Bienvenue sur le portfolio de Bika. Découvrez mes compétences, projets et expériences en design et développement web.">
     <meta name="twitter:image" content="Accueil_Thumbnail.jpg">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <header>
@@ -41,33 +44,46 @@
         </nav>
     </header>
     
-    <section class="section-heros">
-        <div class="contenu-heros">
-            <img src="pdp.jpg" alt="Photo" class="photo-heros">
-            <h1>Bienvenue, je suis BIKA</h1>
-            <p>Étudiant en WEBDESIGN. Découvrez mon univers.</p>
-            <a href="portfolio.html" class="bouton-cta">Explorer mon Portfolio</a>
-        </div>
-    </section>
+    <main>
+        <section class="section-heros">
+            <div class="contenu-heros">
+                <img src="pdp.jpg" alt="Photo de Bika" class="photo-heros">
+                <h1>Bienvenue, je suis BIKA</h1>
+                <p>Étudiant en WEBDESIGN. Découvrez mon univers.</p>
+                <a href="portfolio.html" class="bouton-cta">Explorer mon Portfolio</a>
+            </div>
+        </section>
 
-    <!-- About Me Section -->
-    <section class="about-me">
-        <div class="about-me-content">
-            <h2>À propos de moi</h2>
-            <p>Je suis un passionné du design et du développement web, spécialisé en création de sites internet et en design graphique. Mon objectif est de concevoir des expériences utilisateurs intuitives et modernes tout en utilisant les dernières technologies du web.</p>
-            <p>Fort de plusieurs expériences et projets dans le domaine, je suis toujours à la recherche de nouveaux défis pour enrichir mes compétences et apporter ma touche créative à chaque projet.</p>
-        </div>
-    </section>
+        <!-- About Me Section -->
+        <section class="about-me">
+            <div class="about-me-content">
+                <h2>À propos de moi</h2>
+                <p>Je suis un passionné du design et du développement web, spécialisé en création de sites internet et en design graphique. Mon objectif est de concevoir des expériences utilisateurs intuitives et modernes tout en utilisant les dernières technologies du web.</p>
+                <p>Fort de plusieurs expériences et projets dans le domaine, je suis toujours à la recherche de nouveaux défis pour enrichir mes compétences et apporter ma touche créative à chaque projet.</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Bika. Tous droits réservés.</p>
         <div class="Suivez-moi">
-            <a href="https://github.com/El-bika/" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/mohamed-amine-benkhalifa" target="_blank">LinkedIn</a>
+            <a href="https://github.com/El-bika/" target="_blank" rel="nofollow">GitHub</a>
+            <a href="https://www.linkedin.com/in/mohamed-amine-benkhalifa" target="_blank" rel="nofollow">LinkedIn</a>
         </div>
         <div class="sitemap">
-            <a href="sitemap.xml">Sitemap</a>
+            <a href="sitemap.xml" rel="nofollow">Sitemap</a>
         </div>
     </footer>
+
+    <script src="cv.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCM280LP2Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VCM280LP2Z');
+    </script>
 </body>
 </html>
