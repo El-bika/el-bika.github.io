@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactez Bika - Développeur Web et Designer</title>
-    <meta name="description" content="Contactez Bika pour toute question ou proposition concernant le design et le développement web ainsi que le ui/ux design.">
+    <title>CV de Bika - Développeur Web et Designer</title>
+    <meta name="description" content="Découvrez le parcours, les compétences et les expériences de Bika, développeur web et designer passionné.">
     <meta name="author" content="Mohamed Amine Benkhalifa">
-    <meta name="keywords" content="Contact, Bika, Développeur, Design, Web">
+    <meta name="keywords" content="CV, Bika, Développeur, Design, Web, Expériences, Compétences">
     <link rel="icon" href="icon192.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="canonical" href="https://el-bika.github.io/archi-tp/contact.html">
+    <link rel="canonical" href="https://el-bika.github.io/archi-tp/curriculum.html">
 
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="Contactez Bika - Développeur Web et Designer">
-    <meta property="og:description" content="Contactez Bika pour toute question ou proposition concernant le design et le développement web ainsi que le ui/ux design.">
-    <meta property="og:image" content="Contact_Thumbnail.jpg">
-    <meta property="og:url" content="https://el-bika.github.io/archi-tp/contact.html">
+    <meta property="og:title" content="CV de Bika - Développeur Web et Designer">
+    <meta property="og:description" content="Découvrez le parcours, les compétences et les expériences de Bika, développeur web et designer passionné.">
+    <meta property="og:image" content="Cv_Thumbnail.jpg">
+    <meta property="og:url" content="https://el-bika.github.io/archi-tp/curriculum.html">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contactez Bika - Développeur Web et Designer">
-    <meta name="twitter:description" content="Contactez Bika pour toute question ou proposition concernant le design et le développement web ainsi que le ui/ux design.">
-    <meta name="twitter:image" content="Contact_Thumbnail.jpg">
+    <meta name="twitter:title" content="CV de Bika - Développeur Web et Designer">
+    <meta name="twitter:description" content="Découvrez le parcours, les compétences et les expériences de Bika, développeur web et designer passionné.">
+    <meta name="twitter:image" content="Cv_Thumbnail.jpg">
 
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
@@ -43,42 +43,30 @@
             </ul>
         </nav>
     </header>
-
+    
     <main>
-        <section id="contact" class="contact-section">
-            <div class="section-title">
-                <h1>Contactez-moi</h1>
-                <p>Vous avez des questions ou des propositions ? N'hésitez pas à me contacter !</p>
+        <section id="cv" class="cv-section">
+            <div class="cv-header">
+                <h1>Mon CV</h1>
+                <p>Découvrez mon parcours et mes compétences.</p>
             </div>
 
-            <div class="contact-content">
-                <p>Je suis toujours ouvert à de nouvelles opportunités et collaborations. Que vous ayez une question sur un projet, une proposition de partenariat, ou que vous souhaitiez simplement en savoir plus sur mes services, je serais ravi de vous aider. Vous pouvez me contacter via le formulaire ci-dessous ou en utilisant les informations de contact fournies.</p>
-                <p>Je m'efforce de répondre à tous les messages dans les 24 heures. Si vous avez une demande urgente, veuillez indiquer cela dans votre message et je ferai de mon mieux pour vous répondre rapidement. Merci de votre intérêt et j'ai hâte de discuter avec vous !</p>
-                <p>Voici quelques exemples de types de demandes que je traite régulièrement :</p>
-                <ul>
-                    <li>Questions sur mes compétences et expériences en développement web et design.</li>
-                    <li>Propositions de projets ou de collaborations.</li>
-                    <li>Demandes de devis pour des services de développement web ou de design.</li>
-                    <li>Feedback sur mon portfolio ou mes projets.</li>
-                    <li>Questions générales sur le design, le développement web, ou le UI/UX.</li>
-                </ul>
+            <div class="cv-content">
+                <div class="cv-thumbnail-container">
+                    <img src="thumbnail.jpg" alt="CV Thumbnail" class="cv-thumbnail">
+                    <a href="cv.pdf" class="cv-btn" target="_blank">Voir mon CV en PDF</a>
+                </div>
+                <div class="cv-details">
+                    <h2>Expériences Professionnelles</h2>
+                    <p>J'ai travaillé sur divers projets en tant que développeur web et designer, collaborant avec des équipes multidisciplinaires pour créer des solutions innovantes. Mon expérience inclut la conception de sites web, le développement d'applications web, et la création de designs graphiques pour des clients variés.</p>
+                    <h2>Compétences Techniques</h2>
+                    <p>Je maîtrise plusieurs langages de programmation et outils de design, notamment HTML, CSS, JavaScript, React, Angular, Node.js, Adobe Photoshop, Illustrator, et Adobe XD. Mon expertise en développement front-end et back-end me permet de gérer des projets de bout en bout, de la conception à la mise en production.</p>
+                    <h2>Formation</h2>
+                    <p>Je suis diplômé en design et développement web, avec une spécialisation en UI/UX. J'ai également suivi plusieurs formations en ligne pour me tenir à jour avec les dernières technologies et tendances du secteur.</p>
+                    <h2>Projets Personnels</h2>
+                    <p>En dehors de mon travail professionnel, je développe également des projets personnels pour explorer de nouvelles idées et améliorer mes compétences. Ces projets incluent la création de sites web pour des associations locales, le développement d'applications mobiles, et la conception de supports visuels pour des événements communautaires.</p>
+                </div>
             </div>
-
-            <form id="contact-form" action="submit_contact.php" method="POST">
-                <div class="form-group">
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Envoyer</button>
-            </form>
         </section>
     </main>
 
@@ -92,7 +80,6 @@
             <a href="sitemap.xml" rel="nofollow">Sitemap</a>
         </div>
     </footer>
-
     <script src="cv.js"></script>
 
     <!-- Google Analytics -->
