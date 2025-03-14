@@ -29,6 +29,10 @@ self.addEventListener('install', function(event) {
                 '/ALA.png',
                 '/BOOK.png',
                 '/JOKER.png',
+                '/manifest.json',
+                '/service-worker.js',
+                '/_headers',
+                '/.htaccess',
             ]);
         })
     );
